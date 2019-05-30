@@ -1,0 +1,56 @@
+html, body {
+    height: 100%;
+    width: 100%;
+    margin: 0;
+}
+#wrapper {
+    height: 100%;
+    text-align: center;
+}
+#wrapper::before {
+    content: "";
+    height: 100%;
+    display: inline-block;
+    vertical-align: middle;
+}
+#playground {
+    display: inline-block;
+    vertical-align: middle;
+    width: 450px;
+}
+table {
+    border-collapse: collapse;
+}
+#board {
+    margin: 0 auto;
+}
+td {
+    box-sizing: border-box;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+}
+.light-cell {
+    background-color: #d9b38c;
+}
+.dark-cell {
+    background-color: #bb8044;
+}
+.highlighted-cell {
+    border: 2px solid #ffff80; 
+    cursor: pointer;
+}
+.highlighted-cell:hover {
+    opacity: 0.3;
+}
+.figure {
+    font-size: 27px;
+    cursor: pointer;
+}
+td>.figure{
+    cursor: default;
+}
+.selected-figure {
+    position: relative;
+    bottom: 10px;
+}
